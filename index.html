@@ -11,14 +11,15 @@
       <h1>Editor de texto</h1>
 
       <div class="botones">
-        <button id="btn_negrita">Negrita</button>
-        <button>Cursiva</button>
-        <button>Agradar Tamaño Letra</button>
-        <button>Disminuir Tamaño Letra</button>
+        <button id="btn_negrita" onclick="toBold()">Negrita</button>
+        <button onclick="toCursive()">Cursiva</button>
+        <button onclick="toIncreaseSize()">Agradar Tamaño Letra</button>
+        <button onclick="toDecreaseSize()">Disminuir Tamaño Letra</button>
       </div>
-      <div id="textArea" class="textArea">
+      <div class="textArea">
         <textarea name="texto" id="textArea" cols="30" rows="10"></textarea>
       </div>
     </main>
+    <script src="/editor.js"></script>
   </body>
 </html>
